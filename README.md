@@ -3,7 +3,6 @@
 A responsive Recipe Web Application built using HTML, CSS, and JavaScript.  
 Users can search recipes, filter by country using flags, and view full ingredients and cooking instructions in a popup.
 
----
 
 ##  Features
 
@@ -15,7 +14,6 @@ Users can search recipes, filter by country using flags, and view full ingredien
 - Step-by-step cooking instructions
 - Data fetched from TheMealDB API
 
----
 
 ## Technologies Used
 
@@ -25,7 +23,6 @@ Users can search recipes, filter by country using flags, and view full ingredien
 - Fetch API
 - TheMealDB API
 
----
 
 ## API Used
 
