@@ -41,3 +41,4 @@ https://www.themealdb.com/api/json/v1/1/lookup.php?i=MealID
 
 ## Screenshots
 
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/fb6a71e8-b39c-44bb-903d-b3cb01b3804d" />
