@@ -19,13 +19,12 @@ const fetchByCountry = async (country) => {
     recipeContainer.innerHTML = "";
 
     if (!response.meals) {
-        recipeContainer.innerHTML = "<h2>No recipes found 😢</h2>";
+        recipeContainer.innerHTML = "<h2>No recipes found</h2>";
         return;
     }
 
     response.meals.forEach(async (meal) => {
 
-        // 🔥 Get FULL details using lookup
         const detailData = await fetch(
             `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${meal.idMeal}`
         );
@@ -82,7 +81,7 @@ const fetchRecipes = async (query) => {
     recipeContainer.innerHTML = "";
 
     if (!response.meals) {
-        recipeContainer.innerHTML = "<h2>No recipes found 😢</h2>";
+        recipeContainer.innerHTML = "<h2>No recipes found </h2>";
         return;
     }
 
@@ -126,13 +125,30 @@ const fetchIngredients = (meal) => {
 // popup
 const openRecipePopup = (meal) => {
 
+    let instructions = meal.strInstructions;
+
+    instructions = instructions
+        .replace(/STEP\s*\d+/gi, "")
+        .replace(/\r?\n|\r/g, " ")
+        .trim();
+
+    const steps = instructions
+        .split(/\.\s+/)
+        .filter(step => step.trim() !== "");
+
+    let stepList = "";
+
+    steps.forEach((step, index) => {
+        stepList += `<li><strong>Step ${index + 1}:</strong> ${step.trim()}.</li>`;
+    });
+
     recipeDetailsContent.innerHTML = `
         <h2>${meal.strMeal}</h2>
         <p><b>Origin:</b> ${meal.strArea}</p>
         <h3>Ingredients:</h3>
         <ul>${fetchIngredients(meal)}</ul>
         <h3>Procedure:</h3>
-        <p>${meal.strInstructions}</p>
+        <ol>${stepList}</ol>
     `;
 
     document.querySelector('.recipe-details').style.display = "block";
