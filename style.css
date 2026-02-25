@@ -2,10 +2,10 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body{
-    background-color:#064817;
+    background-color:#182828;
     color:white;
 }
 
@@ -34,7 +34,7 @@ form button{
     border:none;
     border-radius:4px;
     cursor:pointer;
-    background:orange;
+    background:rgb(252, 96, 0);
     font-weight:bold;
 }
 
@@ -132,6 +132,7 @@ form button{
 
 .country-scroll{
     display:flex;
+    justify-content: center;
     gap:15px;
     padding:15px;
     overflow-x:auto;
