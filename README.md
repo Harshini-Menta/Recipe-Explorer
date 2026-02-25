@@ -42,3 +42,9 @@ https://www.themealdb.com/api/json/v1/1/lookup.php?i=MealID
 ## Screenshots
 
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/fb6a71e8-b39c-44bb-903d-b3cb01b3804d" />
+
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/fc9e3b50-805e-438f-a26e-83fd2ef77ed3" />
+
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/9d512b41-c25b-4c4a-abcd-485d936f50cc" />
+
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/0af7613a-722a-4e4c-9019-deecf9acea22" />
